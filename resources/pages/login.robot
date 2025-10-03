@@ -2,13 +2,14 @@
 Library     SeleniumLibrary
 Resource    ../environment.robot
 
-*** Variables ***
 
-${LOGIN_TAB}      css:.fa-lock
-${EMAIL_INPUT}     css:[data-qa="login-email"]
-${PASSWORD_INPUT}  css:[data-qa="login-password"]
-${LOGIN_BUTTON}    css:[data-qa="login-button"]
-${LOGIN_ENDPOINT}    /login
+*** Variables ***
+${LOGIN_TAB}            css:.fa-lock
+${EMAIL_INPUT}          css:[data-qa="login-email"]
+${PASSWORD_INPUT}       css:[data-qa="login-password"]
+${LOGIN_BUTTON}         css:[data-qa="login-button"]
+${LOGIN_ENDPOINT}       /login
+
 
 *** Keywords ***
 Login To The Page

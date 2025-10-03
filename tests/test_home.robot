@@ -9,7 +9,7 @@ ${TIMEOUT}      10s
 
 
 *** Test Cases ***
-Open Google
+Test Home Page
     Open Browser    ${URL}    ${BROWSER}
     Set Selenium Implicit Wait    ${TIMEOUT}
     Click Element    class:fc-cta-consent

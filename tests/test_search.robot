@@ -1,6 +1,6 @@
 *** Settings ***
 Resource            ../resources/environment.robot
-Resource            ../resources/pages/search.robot
+Resource            ../resources/pages/products.robot
 
 Test Setup          Open Browser And Navigate To Page
 Test Teardown       Close Browser

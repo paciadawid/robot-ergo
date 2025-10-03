@@ -10,6 +10,8 @@ ${PRODUCTS_TAB}         class:card_travel
 ${SEARCH_INPUT}         id:search_product
 ${SEARCH_BUTTON}        id:submit_search
 ${SEARCH_RESULTS}       class:single-products
+${ADD_TO_CART_BUTTON}   css:.overlay-content .add-to-cart
+${CONTINUE_SHOPPING_BUTTON}   class:close-modal
 ${ENDPOINT_PRODUCTS}    /products
 
 
@@ -33,3 +35,10 @@ Should Have Number Of Elements Visible
     [Arguments]    ${expected}
     ${count}=    Get Number Of Search Results
     Should Be Equal As Integers    ${count}    ${expected}
+
+Add Product To Cart
+    [Arguments]    ${product_name}
+    Search For Product    ${product_name}
+    Mouse Over    ${SEARCH_RESULTS}
+    Click Element    ${ADD_TO_CART_BUTTON}
+    Click Element    ${CONTINUE_SHOPPING_BUTTON}

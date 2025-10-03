@@ -16,5 +16,8 @@ Open Browser And Navigate To Page
     [Arguments]    ${ENDPOINT}=${EMPTY}
     Open Browser    ${BASE_URL}${ENDPOINT}    ${BROWSER}
     Set Selenium Implicit Wait    ${TIMEOUT}
-    Maximize Browser Window
+    # Maximize Browser Window
+    # Option 1: Scroll to element
+    # Option 2: Close ad
+    # Option 3: Remove add from DOM
     Click Element    ${CONSENT_BUTTON}

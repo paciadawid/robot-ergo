@@ -12,7 +12,6 @@ Navigate To The Page
     [Arguments]    ${ENDPOINT}=${EMPTY}
     Go To   ${BASE_URL}${ENDPOINT}
 
-
 Open Browser And Navigate To Page
     [Arguments]    ${ENDPOINT}=${EMPTY}
     Open Browser    ${BASE_URL}${ENDPOINT}    ${BROWSER}

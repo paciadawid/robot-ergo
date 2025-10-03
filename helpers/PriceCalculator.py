@@ -1,6 +1,3 @@
-
-
-
 class PriceCalculator:
     
     def calculate_total_price(self, total_price):
@@ -19,4 +16,3 @@ class PriceCalculator:
             # ${SUM}=    Evaluate    ${SUM} + ${VAL}
 
         return sum
-    

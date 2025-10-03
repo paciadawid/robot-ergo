@@ -2,8 +2,7 @@
 Library     SeleniumLibrary
 Variables    ../variable.py
 Resource    ../resources/pages/login.robot
-Test Setup     Open Browser    ${BASE_URL}    ${BROWSER}
-#...    Set Selenium Implicit Wait    ${TIMEOUT}
+Test Setup     Open Browser And Navigate To Page
 Test Teardown    Close Browser
 
 
